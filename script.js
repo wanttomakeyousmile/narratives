@@ -28,7 +28,7 @@ const colors = {
     'Asian': 'orange'
 };
 
-d3.csv("/data/dataset.csv").then(data => {
+d3.csv("data/dataset.csv").then(data => {
     data.forEach(d => {
         d.Year = +d.Year;
         for (let key in d) {
