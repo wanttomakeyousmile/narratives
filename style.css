@@ -1,0 +1,189 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #fff;
+}
+
+.container {
+    position: relative;
+    width: 80%;
+    max-width: 1000px;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;
+    color: #333;
+}
+
+.arrow.left {
+    left: -30px;
+}
+
+.arrow.right {
+    right: -30px;
+}
+
+.arrow.replay {
+    right: -30px;
+}
+
+#scene {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+
+.paragraph {
+    text-align: left;
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+.chart-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.annotation {
+    font-size: 0.8rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 0.2rem 0.5rem;
+    position: absolute;
+}
+
+.annotation-line {
+    stroke: #000;
+    stroke-width: 1px;
+}
+
+.annotation-note-title, .annotation-note-label {
+    fill: white;
+}
+
+.annotation-note-bg {
+    fill: grey;
+    fill-opacity: 1;
+}
+
+.chart-subtitle {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.chart-box {
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    margin: 0 auto;
+}
+
+#slider-container {
+    position: relative;
+}
+
+.slider-labels {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    top: 10px;
+}
+
+.slider-labels .min-label {
+    position: absolute;
+    left: 0;
+    transform: translateX(-50%);
+}
+
+.slider-labels .max-label {
+    position: absolute;
+    right: 0;
+    transform: translateX(50%);
+}
+
+.filter-container label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    margin-right: 1rem;
+}
+
+.color-box {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.filter-label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.filter-container label {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    margin-right: 1rem;
+}
+
+.filter-container input {
+    width: auto;
+    margin-right: 0.3rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.legend {
+    font-size: 0.8rem;
+}
+
+.tooltip {
+    position: absolute;
+    background: #f9f9f9;
+    padding: 5px;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+.trend-paragraph {
+    background-color: #f9f9f9;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #333;
+}

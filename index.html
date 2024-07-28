@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infant Death Rate Visualization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="arrow left" onclick="prevScene()">&#9664;</div>
+        <div id="scene">
+            <!-- Scenes will be dynamically inserted here -->
+        </div>
+        <div class="arrow right" onclick="nextScene()">&#9654;</div>
+        <div class="arrow replay" onclick="nextScene()">&#10227;</div>
+    </div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://rawgit.com/susielu/d3-annotation/master/d3-annotation.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
