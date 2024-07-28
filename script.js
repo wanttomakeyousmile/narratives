@@ -8,7 +8,7 @@ const scenes = [
         yKey: 'Black', 
         paragraph: 'The line chart displays data on live births and infant death rates in the United States in comparison to death rates from infants from black mother in the United States.' },
     { id: 'interactive', 
-        title: 'Annual Infant Death Rates in the United States by Race', 
+        title: 'Annual Infant Death Rates in the United States', 
         paragraph: 'Interactively explore the infant death rate trends across different demographics.' }
 ];
 
