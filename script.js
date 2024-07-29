@@ -64,7 +64,7 @@ function createScene() {
 
     d3.select("#scene").append(() => content.node());
 
-    d3.select(".arrow.left").remove("hidden", currentScene !== 0);
+    d3.select(".arrow.left").classed("hidden", currentScene === 0);
     d3.select(".arrow.right").classed("hidden", currentScene === scenes.length - 1);
     d3.select(".arrow.replay").classed("hidden", currentScene !== scenes.length - 1);
 
